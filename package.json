@@ -2,6 +2,7 @@
   "name": "taxer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dovzhenko-olga.github.io/taxer",
   "dependencies": {
     "@lapo/asn1js": "^1.2.3",
     "@reduxjs/toolkit": "^1.7.2",
