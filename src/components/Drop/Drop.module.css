@@ -1,0 +1,54 @@
+.drop {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border: 1px dashed black;
+  text-align: center;
+  color: rgb(212, 209, 209);
+}
+.notify {
+  height: 100%;
+}
+.show {
+  width: 300px;
+  height: 200px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid black;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.button {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  margin-top: 30px;
+  width: 90px;
+  padding: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgb(212, 209, 209);
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(175, 172, 172);
+}
+.button:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 30%;
+  bottom: -130%;
+  width: max-content;
+  z-index: 1;
+  background: rgba(255, 255, 230, 0.9);
+  font-size: 11px;
+  padding: 5px 5px;
+  border: 1px solid black;
+}
